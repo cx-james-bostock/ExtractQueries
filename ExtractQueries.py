@@ -23,6 +23,8 @@ language_map = {
     131072: 'Go',
     524288: 'Kotlin',
     2097152: 'Cobol',
+    4194304: 'RPG',
+    8388608: 'Swift',
     1073741824: 'Common'
 }
 
