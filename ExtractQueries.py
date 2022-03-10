@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import sys
 from CheckmarxPythonSDK.CxPortalSoapApiSDK import get_query_collection
 
 language_map = {
