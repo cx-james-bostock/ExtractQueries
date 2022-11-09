@@ -26,6 +26,7 @@ language_map = {
     2097152: 'Cobol',
     4194304: 'RPG',
     8388608: 'Swift',
+    16777216: 'Dart',
     1073741824: 'Common'
 }
 
