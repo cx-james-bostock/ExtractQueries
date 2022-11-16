@@ -43,7 +43,12 @@ def extract_queries(args):
         if args.no_cx and query_group['PackageType'] == 'Cx':
             continue
         language = language_map[query_group['Language']]
-        dir = Path(root, language, query_group['PackageType'], query_group['Name'])
+        if query_group['PackageType'] == 'Project':
+            dir = Path(root, language, f'Project_{query_group["ProjectId"]}', query_group['Name'])
+        elif query_group['PackageType'] == 'Team':
+            dir = Path(root, language, f'Team_{query_group["OwningTeam"]}', query_group['Name'])
+        else:
+            dir = Path(root, language, query_group['PackageType'], query_group['Name'])
         print(f'Creating {dir}')
         dir.mkdir(parents=True, exist_ok=True)
 
