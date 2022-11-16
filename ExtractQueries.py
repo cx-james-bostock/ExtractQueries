@@ -1,3 +1,4 @@
+import argparse
 import os
 from pathlib import Path
 import sys
@@ -30,7 +31,7 @@ language_map = {
     1073741824: 'Common'
 }
 
-def extract_queries():
+def extract_queries(args):
 
     resp = get_query_collection()
     if not resp['IsSuccesfull']:
@@ -39,6 +40,8 @@ def extract_queries():
 
     root = Path('queries')
     for query_group in resp['QueryGroups']:
+        if args.no_cx and query_group['PackageType'] == 'Cx':
+            continue
         language = language_map[query_group['Language']]
         dir = Path(root, language, query_group['PackageType'], query_group['Name'])
         print(f'Creating {dir}')
@@ -56,4 +59,7 @@ def extract_queries():
 
 if __name__ == '__main__':
 
-    extract_queries()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-n', '--no-cx', action='store_true', default=False)
+    args = parser.parse_args()
+    extract_queries(args)
