@@ -49,16 +49,18 @@ def extract_queries(args):
             dir = Path(root, language, f'Team_{query_group["OwningTeam"]}', query_group['Name'])
         else:
             dir = Path(root, language, query_group['PackageType'], query_group['Name'])
-        print(f'Creating {dir}')
+        if args.verbose > 0:
+            print(f'Creating {dir}')
         dir.mkdir(parents=True, exist_ok=True)
 
         for query in query_group['Queries']:
             if query['Source']:
                 path = Path(dir, query['Name'])
-                print(f'Extracting {query["Name"]} to {path}')
+                if args.verbose > 1:
+                    print(f'Extracting {query["Name"]} to {path}')
                 with path.open('w') as f:
                     f.write(query['Source'])
-            else:
+            elif args.verbose > 1:
                 print(f'No source found for {query["Name"]}')
 
 
@@ -69,5 +71,7 @@ if __name__ == '__main__':
                         help='Do not extract out-of-the-box queries')
     parser.add_argument('-o', '--output-dir', default='.', metavar='DIR',
                         help='Extract queries to the specified directory')
+    parser.add_argument('-v', '--verbose', action='count', default=0,
+                        help='Verbose output (may be specified multiple times)')
     args = parser.parse_args()
     extract_queries(args)
