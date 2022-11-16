@@ -65,7 +65,7 @@ def extract_queries(args):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Extract queries from a CxSAST instance')
-    parser.add_argument('-n', '--no-cx', action='store_true', default=False,
+    parser.add_argument('-n', '--no-cx', action='store_true',
                         help='Do not extract out-of-the-box queries')
     parser.add_argument('-o', '--output-dir', default='.', metavar='DIR',
                         help='Extract queries to the specified directory')
