@@ -184,11 +184,11 @@
         },
         "checkmarxpythonsdk": {
             "hashes": [
-                "sha256:70fe3793212c324da54e620b139faa7094d147417b4f5c5ce86839e49594f951",
-                "sha256:8722be9df8c23a4020811d22d1f9ce60b7cd8958269f7f1adf2ff6c81b155b15"
+                "sha256:7a58ab1542814fc570fe9f0482273de3257a17f5c7e53eb9eb4c5050e5c17790",
+                "sha256:f2b07226accbc5c24b6054d0799d131af528a049e79b50e55cca236dbd5951df"
             ],
             "index": "pypi",
-            "version": "==0.7.5"
+            "version": "==0.7.6"
         },
         "cryptography": {
             "hashes": [
@@ -363,11 +363,11 @@
         },
         "platformdirs": {
             "hashes": [
-                "sha256:47692bc24c1958e8b0f13dd727307cff1db103fca36399f457da8e05f222fdc4",
-                "sha256:7954a68d0ba23558d753f73437c55f89027cf8f5108c19844d4b82e5af396335"
+                "sha256:412dae91f52a6f84830f39a8078cecd0e866cb72294a5c66808e74d5e88d251f",
+                "sha256:e2378146f1964972c03c085bb5662ae80b2b8c06226c54b2ff4aa9483e8a13a5"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==3.5.0"
+            "version": "==3.5.1"
         },
         "pycparser": {
             "hashes": [
