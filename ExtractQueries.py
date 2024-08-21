@@ -31,7 +31,7 @@ language_map = {
     8388608: 'Swift',
     16777216: 'Dart',
     33554432: 'Lua',
-    67108864, 'Markup',
+    67108864: 'Markup',
     1073741824: 'Common'
 }
 
