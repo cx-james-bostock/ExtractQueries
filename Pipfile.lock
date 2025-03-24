@@ -145,11 +145,11 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:60dfb831c54eb466db9b91891a6c8a0c223626caa049969d5d42858ad1e7f8c7",
-                "sha256:aa417bac0f4d79533080e6e17c0509e149353aec83cfe7879597a7942f7f08d0"
+                "sha256:99e8eefd5df6347ead15df07ce55f4e62a51ea7b54de1127522a08597923b726",
+                "sha256:a8b97d217d82b3c4f6bcc906e264df7ebb51e2c6a62b3548a97cd173fb8759a1"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==1.37.13"
+            "version": "==1.37.18"
         },
         "certifi": {
             "hashes": [
@@ -332,12 +332,12 @@
         },
         "checkmarxpythonsdk": {
             "hashes": [
-                "sha256:8e3467e48ccd930ed38c7b84a51735e9a1f657c24a637632e13ed0c5e1553208",
-                "sha256:cd054c1c13e53408727c56ca6b59ffe98d56e48d10f5bfaccaec1dc54e3f5b94"
+                "sha256:113dcc60f8ccd5faf56ada365328922c81c2fc75e5bb2f8f7fdedb40e7b22e5a",
+                "sha256:ef6f51050782b536be56e767098432f34357f359a168f331e3e6a62e09bd6612"
             ],
             "index": "pypi",
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
-            "version": "==1.2.0"
+            "version": "==1.2.1"
         },
         "cryptography": {
             "hashes": [
@@ -852,11 +852,11 @@
         },
         "platformdirs": {
             "hashes": [
-                "sha256:357fb2acbc885b0419afd3ce3ed34564c13c9b95c89360cd9563f73aa5e2b907",
-                "sha256:73e575e1408ab8103900836b97580d5307456908a03e92031bab39e4554cc3fb"
+                "sha256:a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94",
+                "sha256:eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351"
             ],
-            "markers": "python_version >= '3.8'",
-            "version": "==4.3.6"
+            "markers": "python_version >= '3.9'",
+            "version": "==4.3.7"
         },
         "propcache": {
             "hashes": [
