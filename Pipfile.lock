@@ -332,12 +332,12 @@
         },
         "checkmarxpythonsdk": {
             "hashes": [
-                "sha256:20ede4a5b758d283e2ba88c20f7e7eda0dbf449ae13b6f86b80f94abe6a0df9f",
-                "sha256:495c20e68a302ccb4cf80b8dd95bb679df56ba19489ec279dad667ef6142b3b7"
+                "sha256:41d006408e1fc30ad26c87e609bbcc98923254f9af229c17f1875414e5e34c44",
+                "sha256:a036ea477502ff56a97c7e285647a3a106ea4927d325911b43bbd44a33f11a4f"
             ],
             "index": "pypi",
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
-            "version": "==1.2.6"
+            "markers": "python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version >= '3.7'",
+            "version": "==1.2.8"
         },
         "cryptography": {
             "hashes": [
